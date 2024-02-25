@@ -1,0 +1,25 @@
+form{
+    border: 1px solid;
+    width: 500px;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 5px 5px 10px;
+    backdrop-filter: blur(50px);
+}
+body{
+    padding: 130px;
+    display: flex;
+    background: url('/img/plouzane-1758197.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    margin-left: 15%;
+}
+.form-control{
+    background: transparent;
+}
+.form-control:hover{
+    background: transparent;
+}
