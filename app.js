@@ -20,6 +20,8 @@ app.get('/usuario', (req, res) => {
         res.render('usuario')
 });
 
-// app.listen(8000, () => {
-//     console.log('Sistema iniciado no port: 8000');
-// });
+app.listen(3000, () => {
+    console.log('Sistema iniciado no port: 3000');
+});
+
+module.exports = app;
