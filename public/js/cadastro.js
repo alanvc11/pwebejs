@@ -14,25 +14,25 @@ function cadastrarUsuario() {
         return false;
     }
 
-    // Recupera os usuários existentes ou inicializa um array vazio
+   
     var storedUsers = JSON.parse(localStorage.getItem('usuarios')) || [];
 
-    // Verifica se o email já está cadastrado
+    
     if (storedUsers.some(user => user.email === email)) {
         alert('Este email já está cadastrado.');
         return false;
     }
 
-    // Adiciona o novo usuário ao array
+   
     var novoUsuario = { nome: nome, email: email, senha: senha };
     storedUsers.push(novoUsuario);
 
-    // Armazena o array atualizado no localStorage
+   
     localStorage.setItem('usuarios', JSON.stringify(storedUsers));
 
     alert('Cadastro bem-sucedido! Redirecionando para a página inicial.');
 
-    // Simula o clique no link de redirecionamento
+   
     document.getElementById('linkRedirecionar').click();
 
     return false; // Impede o envio do formulário
